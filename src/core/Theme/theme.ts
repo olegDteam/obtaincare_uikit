@@ -511,68 +511,27 @@ const theme = createTheme({
     MuiSvgIcon: {
       variants: [
         {
-          props: {fontSize: 'hospital'},
+          props: {fontSize: 'm'},
           style: {
-            fontSize: '37px'
+            fontSize: '22px'
           }
         },
         {
-          props: {fontSize: 'xm'},
+          props: {fontSize: 's'},
           style: {
             fontSize: '18px'
           }
         },
         {
-          props: {fontSize: 'size22px'},
+          props: {fontSize: 'l'},
           style: {
-            fontSize: '22px'
+            fontSize: '32px'
           }
         },
         {
           props: {fontSize: 'xl'},
           style: {
             fontSize: '64px'
-          }
-        },
-        {
-          props: {fontSize: 'xs'},
-          style: {
-            fontSize: '8px',
-            marginBottom: '2px'
-          }
-        },
-        {
-          props: {fontSize: 'sidebar'},
-          style: {
-            fontSize: '24px',
-            marginLeft: '13px',
-            marginTop: '2px'
-          }
-        },
-        {
-          props: {fontSize: 'userSidebar'},
-          style: {
-            fontSize: '24px',
-            marginLeft: '4px',
-            marginTop: '2px'
-          }
-        },
-        {
-          props: {fontSize: 'cross'},
-          style: {
-            fontSize: '13px',
-          }
-        },
-        {
-          props: {color: 'lightGray'},
-          style: {
-            color: colors.lightGray
-          }
-        },
-        {
-          props: {color: 'blue'},
-          style: {
-            color: colors.text.additional
           }
         },
       ]
@@ -639,18 +598,10 @@ declare module '@mui/material/Avatar/Avatar' {
 
 declare module '@mui/material/SvgIcon/SvgIcon' {
   interface SvgIconPropsSizeOverrides {
-    hospital: true
-    sidebar: true
-    userSidebar: true
-    cross: true
-    xm: true
+    m: true
+    l: true
     xl: true
-    xs: true
-    size22px: true
-  }
-  interface SvgIconPropsColorOverrides {
-    lightGray: true
-    blue: true
+    s: true
   }
 }
 
