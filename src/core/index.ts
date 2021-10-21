@@ -28,6 +28,12 @@ export * from './Components/SvgIcon'
 export {default as Pagination} from './Components/Pagination'
 export * from './Components/Pagination'
 
+export {default as InputAdornment} from './Components/InputAdornment'
+export * from './Components/InputAdornment'
+
+export {default as CircularProgress} from './Components/CircularProgress'
+export * from './Components/CircularProgress'
+
 export {ThemeProvider} from './Provider'
 export * from './Provider'
 

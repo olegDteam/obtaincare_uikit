@@ -1,6 +1,6 @@
 import React from 'react'
 import {styled, TextField as TextFieldBase, TextFieldProps as TextFieldPropsBase} from '@mui/material'
-import {colors} from "../../Theme/theme";
+import {colors} from "../../Theme";
 
 export type TextFieldProps = Omit<TextFieldPropsBase, 'variant'>
 
@@ -9,6 +9,11 @@ const TextFieldStyled = styled((props: TextFieldPropsBase) => <TextFieldBase var
   background-color: ${colors.common.white};
 
   .MuiOutlinedInput-input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 14px 15px;
     ::placeholder {
       color: ${colors.text.grey};
       opacity: unset;
@@ -24,14 +29,14 @@ const TextFieldStyled = styled((props: TextFieldPropsBase) => <TextFieldBase var
 
   .MuiOutlinedInput-root {
     padding: 0;
-    height: 46px;
+    min-height: 46px;
 
     fieldset {
-      border: 1px solid ${colors.border.additional};
+      border: 1px solid ${colors.border.secondary};
     }
 
     &:hover fieldset {
-      border: 1px solid ${colors.border.additional};
+      border: 1px solid ${colors.border.secondary};
     }
 
     &.Mui-focused fieldset {

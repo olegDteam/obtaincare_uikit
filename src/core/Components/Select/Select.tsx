@@ -19,6 +19,7 @@ export type SelectProps = SelectPropsBase & {
 const Input = styled(InputBase)(() => `
   border-radius: 5px;
   min-height: 46px;
+  background-color: ${colors.common.white};
 
   &.MuiInputBase-root {
     .MuiSelect-select {

@@ -37,6 +37,7 @@ export declare const colors: {
         white: string;
         lightGray: string;
         sweetBlue: string;
+        black: string;
     };
     border: {
         primary: string;

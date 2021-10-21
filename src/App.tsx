@@ -1,16 +1,20 @@
-import React from 'react';
+import React from 'react'
 import './App.css';
-import CircularProgress from "./core/Components/CircularProgress";
 import {ThemeProvider} from '../src/core/Provider'
-import {theme} from "./core";
+import {Button, theme} from "./core";
+import {BrowserRouter, Link} from "react-router-dom";
+import {Button as ButtonBase} from '@mui/material'
 
 function App() {
   return (
     <div className="App">
-      <ThemeProvider theme={theme}>
-        <CircularProgress value={40} size={72}/>
+      <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <Button component={Link} to={'https://google.com'} color={'primary'}/>
+          <ButtonBase component={Link} to={'https://google.com'} color={'primary'}/>
 
-      </ThemeProvider>
+        </ThemeProvider>
+      </BrowserRouter>
     </div>
   );
 }
