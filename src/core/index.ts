@@ -22,6 +22,9 @@ export * from './Components/TextField'
 export {default as Select} from './Components/Select'
 export * from './Components/Select'
 
+export {default as SvgIcon} from './Components/SvgIcon'
+export * from './Components/SvgIcon'
+
 export {default as Pagination} from './Components/Pagination'
 export * from './Components/Pagination'
 

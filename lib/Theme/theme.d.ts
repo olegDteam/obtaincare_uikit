@@ -136,18 +136,10 @@ declare module '@mui/material/Avatar/Avatar' {
 }
 declare module '@mui/material/SvgIcon/SvgIcon' {
     interface SvgIconPropsSizeOverrides {
-        hospital: true;
-        sidebar: true;
-        userSidebar: true;
-        cross: true;
-        xm: true;
+        m: true;
+        l: true;
         xl: true;
-        xs: true;
-        size22px: true;
-    }
-    interface SvgIconPropsColorOverrides {
-        lightGray: true;
-        blue: true;
+        s: true;
     }
 }
 declare module "@mui/material/Radio/Radio" {
