@@ -1,8 +1,10 @@
 import React from 'react'
-import {styled, Switch as SwitchBase, SwitchProps} from "@mui/material";
-import { colors } from '../../Theme/theme';
+import {styled, Switch as SwitchBase, SwitchProps as SwitchPropsBase} from "@mui/material";
+import {colors} from '../../Theme/theme';
 
-const Switch = styled((props:SwitchProps) => (
+export type SwitchProps = Omit<SwitchPropsBase,'disableRipple'>
+
+const Switch = styled((props: SwitchProps) => (
   <SwitchBase focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
 ))({
   width: 51,

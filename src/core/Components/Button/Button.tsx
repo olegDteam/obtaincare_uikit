@@ -1,7 +1,9 @@
 import React from 'react'
-import {ButtonProps, Button as ButtonBase, Typography} from "@mui/material";
+import {ButtonProps as ButtonPropsBase, Button as ButtonBase, Typography} from "@mui/material";
 
-const Button = (props: ButtonProps) => {
+export type ButtonProps = ButtonPropsBase
+
+const Button:React.FC<ButtonProps> = props => {
   return (
     <ButtonBase disableRipple {...props}>
       <Typography variant={'button'}>
@@ -10,5 +12,6 @@ const Button = (props: ButtonProps) => {
     </ButtonBase>
   )
 }
+
 
 export default Button

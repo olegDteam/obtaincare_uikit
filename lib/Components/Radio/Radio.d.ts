@@ -1,9 +1,9 @@
 import React from 'react';
-import { RadioProps } from "@mui/material";
-declare type RadioStyledType = RadioProps & {
+import { RadioProps as RadioPropsBase } from "@mui/material";
+export declare type RadioProps = Omit<RadioPropsBase, 'disableRipple' | 'icon' | 'checkedIcon'> & {
     fill?: string;
     iconColor?: 'primary' | 'danger' | 'secondary';
 };
-declare const Radio: React.FC<Omit<RadioStyledType, 'disableRipple' | 'icon' | 'checkedIcon'>>;
+declare const Radio: React.FC<RadioProps>;
 export default Radio;
 //# sourceMappingURL=Radio.d.ts.map

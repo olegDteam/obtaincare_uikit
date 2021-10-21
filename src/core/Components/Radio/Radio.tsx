@@ -1,10 +1,10 @@
 import React from 'react'
-import {styled, Radio as RadioBase, RadioProps} from "@mui/material";
+import {styled, Radio as RadioBase, RadioProps as RadioPropsBase} from "@mui/material";
 import {RadioChecked} from "../Icons/RadioChecked";
 import {RadioUnchecked} from "../Icons/RadioUnchecked";
 import {colors} from "../../Theme/theme";
 
-type RadioStyledType = RadioProps & {
+export type RadioProps = Omit<RadioPropsBase, 'disableRipple'|'icon'|'checkedIcon'> & {
   fill?:string
   iconColor?: 'primary'|'danger'|'secondary'
 }
@@ -19,7 +19,7 @@ const RadioStyled = styled(RadioBase)(()=>`
   }
 `)
 
-const Radio:React.FC<Omit<RadioStyledType, 'disableRipple'|'icon'|'checkedIcon'>> = (props) =>{
+const Radio:React.FC<RadioProps> = (props) =>{
   let fill
   if(props.iconColor==='primary') {
     fill=colors.primary.main

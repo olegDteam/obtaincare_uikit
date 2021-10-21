@@ -1,5 +1,6 @@
 import React from 'react';
-import { TextFieldProps } from '@mui/material';
-declare const TextField: React.FC<Omit<TextFieldProps, 'variant'>>;
+import { TextFieldProps as TextFieldPropsBase } from '@mui/material';
+export declare type TextFieldProps = Omit<TextFieldPropsBase, 'variant'>;
+declare const TextField: React.FC<TextFieldProps>;
 export default TextField;
 //# sourceMappingURL=TextField.d.ts.map

@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   Autocomplete as AutocompleteBase,
-  AutocompleteProps,
+  AutocompleteProps as AutocompletePropsBase,
   InputBase,
   Paper as PaperBase,
   styled,
@@ -108,7 +108,7 @@ export const Paper = styled(PaperBase)(() => `
   }
 `)
 
-type AutocompletePropsType = Omit<AutocompleteProps<any, any, any, any>, 'PaperComponent' | 'renderInput'> & {
+export type AutocompleteProps = Omit<AutocompletePropsBase<any, any, any, any>, 'PaperComponent' | 'renderInput'> & {
   color?: 'primary' | 'secondary'
   name?: string
   inputPropValue?: unknown
@@ -117,7 +117,7 @@ type AutocompletePropsType = Omit<AutocompleteProps<any, any, any, any>, 'PaperC
   helperText?: string | null
 }
 
-const Autocomplete: React.FC<AutocompletePropsType> = (props) => {
+const Autocomplete: React.FC<AutocompleteProps> = (props) => {
   const {color, name, inputPropValue, error, onInputPropChange, helperText, ...otherProps} = props
   return <>
     <AutocompleteBase

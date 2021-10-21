@@ -4,7 +4,7 @@ import { colors } from "../../Theme/theme";
 import {CheckboxChecked} from "../Icons/CheckboxChecked";
 import {CheckboxUnchecked} from "../Icons/CheckboxUnchecked";
 
-type CheckBoxType=Omit<CheckboxProps,'disableRipple'|'disableTouchRipple'|'disableFocusRipple'|'icon'|'checkedIcon'>& {
+export type CheckBoxType=Omit<CheckboxProps,'disableRipple'|'disableTouchRipple'|'disableFocusRipple'|'icon'|'checkedIcon'>& {
   iconColor?: 'primary'|'danger'|'secondary'
 }
 

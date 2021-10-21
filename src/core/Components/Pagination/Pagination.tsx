@@ -1,6 +1,8 @@
-import {styled,Pagination as PaginationBase, PaginationProps} from "@mui/material";
+import {styled,Pagination as PaginationBase, PaginationProps as PaginationPropsBase} from "@mui/material";
 import React from "react";
 import {colors} from "../../Theme/theme";
+
+export type PaginationProps = Omit<PaginationPropsBase, 'shape' | 'variant'>
 
 const PaginationStyled = styled((props: PaginationProps) => (
   <PaginationBase shape={"rounded"} color={props.color??'secondary'} variant={"outlined"} {...props}/>))`
@@ -51,7 +53,7 @@ const PaginationStyled = styled((props: PaginationProps) => (
   }
 `;
 
-const Pagination: React.FC<Omit<PaginationProps, 'shape' | 'variant'>> = (props) => {
+const Pagination: React.FC<PaginationProps> = (props) => {
   return <PaginationStyled {...props}/>
 }
 

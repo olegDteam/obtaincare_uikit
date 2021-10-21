@@ -1,8 +1,10 @@
 import React from 'react'
-import {styled, TextField as TextFieldBase, TextFieldProps} from '@mui/material'
+import {styled, TextField as TextFieldBase, TextFieldProps as TextFieldPropsBase} from '@mui/material'
 import {colors} from "../../Theme/theme";
 
-const TextFieldStyled = styled((props: TextFieldProps) => <TextFieldBase variant={'outlined'} {...props}/>)`
+export type TextFieldProps = Omit<TextFieldPropsBase, 'variant'>
+
+const TextFieldStyled = styled((props: TextFieldPropsBase) => <TextFieldBase variant={'outlined'} {...props}/>)`
   border-radius: 5px;
   background-color: ${colors.common.white};
 
@@ -23,6 +25,7 @@ const TextFieldStyled = styled((props: TextFieldProps) => <TextFieldBase variant
   .MuiOutlinedInput-root {
     padding: 0;
     height: 46px;
+
     fieldset {
       border: 1px solid ${colors.border.additional};
     }
@@ -46,7 +49,7 @@ const TextFieldStyled = styled((props: TextFieldProps) => <TextFieldBase variant
   }
 `
 
-const TextField: React.FC<Omit<TextFieldProps, 'variant'>> = (props) => {
+const TextField: React.FC<TextFieldProps> = (props) => {
   return <TextFieldStyled {...props}/>
 }
 

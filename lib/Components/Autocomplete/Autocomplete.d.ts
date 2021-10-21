@@ -1,5 +1,5 @@
 import React from 'react';
-import { AutocompleteProps } from "@mui/material";
+import { AutocompleteProps as AutocompletePropsBase } from "@mui/material";
 export declare const Input: import("@mui/system").StyledComponent<import("@mui/material").InputBaseProps & import("@mui/system").MUIStyledCommonProps<import("@mui/material").Theme>, {}, {}>;
 export declare const Paper: import("@mui/system").StyledComponent<{
     children?: React.ReactNode;
@@ -11,7 +11,7 @@ export declare const Paper: import("@mui/system").StyledComponent<{
 } & import("@mui/material/OverridableComponent").CommonProps & Omit<Pick<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "key" | keyof React.HTMLAttributes<HTMLDivElement>> & {
     ref?: ((instance: HTMLDivElement | null) => void) | React.RefObject<HTMLDivElement> | null | undefined;
 }, "square" | keyof import("@mui/material/OverridableComponent").CommonProps | "children" | "sx" | "variant" | "elevation"> & import("@mui/system").MUIStyledCommonProps<import("@mui/material").Theme>, {}, {}>;
-declare type AutocompletePropsType = Omit<AutocompleteProps<any, any, any, any>, 'PaperComponent' | 'renderInput'> & {
+export declare type AutocompleteProps = Omit<AutocompletePropsBase<any, any, any, any>, 'PaperComponent' | 'renderInput'> & {
     color?: 'primary' | 'secondary';
     name?: string;
     inputPropValue?: unknown;
@@ -19,6 +19,6 @@ declare type AutocompletePropsType = Omit<AutocompleteProps<any, any, any, any>,
     onInputPropChange?: React.ChangeEventHandler<HTMLTextAreaElement | HTMLInputElement>;
     helperText?: string | null;
 };
-declare const Autocomplete: React.FC<AutocompletePropsType>;
+declare const Autocomplete: React.FC<AutocompleteProps>;
 export default Autocomplete;
 //# sourceMappingURL=Autocomplete.d.ts.map

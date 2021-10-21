@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  SelectProps,
+  SelectProps as SelectPropsBase,
   Select as SelectBase,
   MenuItem,
   Typography,
@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import {colors} from '../../Theme/theme';
 
-type SelectType = Omit<SelectProps, 'input'> & {
+export type SelectProps = SelectPropsBase & {
   options: {
     label: string
     value: string | number | readonly string[] | undefined
@@ -40,7 +40,7 @@ const Input = styled(InputBase)(() => `
 
 `)
 
-const Select: React.FC<SelectType> = (props) => {
+const Select: React.FC<SelectProps> = (props) => {
   const {options, ...otherProps} = props
   const styles = require('./styles.module.css')
   return (
@@ -56,7 +56,7 @@ const Select: React.FC<SelectType> = (props) => {
 
         }
       }}
-      input={<Input/>}
+      input={otherProps.input??<Input/>}
       {...otherProps}
     >
       {options.map((option) =>

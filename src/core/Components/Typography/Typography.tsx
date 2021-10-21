@@ -1,6 +1,8 @@
 import React from "react";
-import {TypographyProps,Typography as TypographyBase} from "@mui/material";
+import {TypographyProps as TypographyPropsBase, Typography as TypographyBase} from "@mui/material";
 
-const Typography:React.FC<TypographyProps> = (props) => <TypographyBase {...props}/>
+export type TypographyProps = TypographyPropsBase
+
+const Typography: React.FC<TypographyProps> = (props) => <TypographyBase {...props}/>
 
 export default Typography
