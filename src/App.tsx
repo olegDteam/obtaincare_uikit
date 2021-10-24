@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <ThemeProvider theme={theme}>
-          <Button component={Link} to={'https://google.com'} color={'primary'}/>
-          <ButtonBase component={Link} to={'https://google.com'} color={'primary'}/>
+          <Button component={Link} to={'https://google.com'} color={'primary'}>paiusbhd</Button>
+          <ButtonBase component={Link} to={'https://google.com'} color={'secondary'}/>
 
         </ThemeProvider>
       </BrowserRouter>

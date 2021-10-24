@@ -1,8 +1,8 @@
-import React, { ElementType } from 'react'
-import {ButtonProps as ButtonPropsBase, Button as ButtonBase, Typography} from "@mui/material";
+import React, {ElementType} from 'react'
+import {Button as ButtonBase, ButtonProps as ButtonPropsBase, Typography} from "@mui/material";
 
 const Button: React.FC<ButtonProps> = props => {
-   return (
+  return (
     <ButtonBase
       disableRipple
       color={props.color ?? 'secondary'}
@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = props => {
 
 export type ButtonProps = ButtonPropsBase & {
   component?: ElementType
-  to?:string
+  to?: string
 }
 
 export default Button

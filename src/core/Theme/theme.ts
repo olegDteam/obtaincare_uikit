@@ -89,8 +89,11 @@ export const colors = {
 
 const theme = createTheme({
   palette: {
-    additional: {
-      main: '#FFFFFF'
+    link: {
+      main: '#FFFFFF',
+      light: '#FFFFFF',
+      dark: '#FFFFFF',
+      contrastText: '#FFFFFF'
     },
     action: {
       disabledOpacity: 0.5
@@ -268,7 +271,7 @@ const theme = createTheme({
             justifyContent: "flex-start"
           }
         },
-        //COLORS
+        // COLORS
         {
           props: {color: "primary"},
           style: {
@@ -310,7 +313,7 @@ const theme = createTheme({
           }
         },
         {
-          props: {color: "additional"},
+          props: {color: "info"},
           style: {
             color: colors.text.additional,
             backgroundColor: colors.additional.main,
@@ -350,7 +353,7 @@ const theme = createTheme({
           }
         },
         {
-          props: {color: "danger"},
+          props: {color: "error"},
           style: {
             color: colors.text.default,
             backgroundColor: colors.danger.red,
@@ -359,7 +362,7 @@ const theme = createTheme({
             }
           }
         },
-        //SIZES
+        // SIZES
         {
           props: {size: 's'},
           style: {
@@ -539,11 +542,11 @@ declare module "@mui/material/Radio/Radio" {
 
 declare module "@mui/material/styles/createPalette" {
   interface Palette {
-    additional: Palette['primary'];
+    link: Palette['primary'];
   }
 
   interface PaletteOptions {
-    additional: PaletteOptions['primary'];
+    link: PaletteOptions['primary'];
   }
 }
 
