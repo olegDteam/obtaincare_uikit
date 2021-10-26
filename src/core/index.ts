@@ -7,6 +7,9 @@ export * from './Components/Button'
 export {default as CheckBox} from './Components/CheckBox'
 export * from './Components/CheckBox'
 
+export {default as LinearProgress} from './Components/LinearProgress'
+export * from './Components/LinearProgress'
+
 export {default as Radio} from './Components/Radio'
 export * from './Components/Radio'
 

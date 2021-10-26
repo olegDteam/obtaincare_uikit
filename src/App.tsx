@@ -3,16 +3,17 @@ import './App.css';
 import {ThemeProvider} from '../src/core/Provider'
 import {Button, theme} from "./core";
 import {BrowserRouter, Link} from "react-router-dom";
-import {Button as ButtonBase} from '@mui/material'
+import {Box, Button as ButtonBase} from '@mui/material'
+import LinearProgress from "./core/Components/LinearProgress";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <ThemeProvider theme={theme}>
-          <Button component={Link} to={'https://google.com'} color={'primary'}>paiusbhd</Button>
-          <ButtonBase component={Link} to={'https://google.com'} color={'secondary'}/>
-
+          <Box style={{width: 438, position: 'absolute', top: '50%', left: '50%'}}>
+            <LinearProgress value={30} color={'primary'}/>
+          </Box>
         </ThemeProvider>
       </BrowserRouter>
     </div>

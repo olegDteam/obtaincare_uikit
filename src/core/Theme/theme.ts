@@ -39,7 +39,8 @@ export const colors = {
     white: '#FFFFFF',
     lightGray: '#7E8EA2',
     sweetBlue: '#F2F8FE',
-    black: '#000000'
+    black: '#000000',
+    ivory: '#FFFDEA'
   },
   border: {
     primary: '',
@@ -126,8 +127,8 @@ const theme = createTheme({
       fontStyle: 'normal'
     },
     h5: {
-      fontSize: '15px',
-      lineHeight: '19px',
+      fontSize: '16px',
+      lineHeight: '24px',
       fontWeight: 600,
       fontStyle: 'normal'
     },

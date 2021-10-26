@@ -1,6 +1,6 @@
 import React from 'react'
 import {styled, Switch as SwitchBase, SwitchProps as SwitchPropsBase} from "@mui/material";
-import {colors} from '../../Theme/theme';
+import {colors} from '../../Theme';
 
 export type SwitchProps = Omit<SwitchPropsBase,'disableRipple'>
 
