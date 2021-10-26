@@ -18,6 +18,9 @@ const LinearProgress = styled((props:LinearProgressProps)=><LinearProgressBase v
     '&.MuiLinearProgress-colorSecondary': {
       backgroundColor: colors.common.sweetBlue
     },
+    '&.MuiLinearProgress-colorInfo': {
+      backgroundColor: colors.common.sweetBlue
+    },
     '.MuiLinearProgress-bar': {
       borderRadius: 555,
       '&.MuiLinearProgress-barColorPrimary': {
@@ -25,6 +28,9 @@ const LinearProgress = styled((props:LinearProgressProps)=><LinearProgressBase v
       },
       '&.MuiLinearProgress-barColorSecondary': {
         backgroundColor: colors.secondary.main,
+      },
+      '&.MuiLinearProgress-barColorInfo': {
+        backgroundColor: colors.common.orange,
       }
     }
   }

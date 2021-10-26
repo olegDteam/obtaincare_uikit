@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <ThemeProvider theme={theme}>
           <Box style={{width: 438, position: 'absolute', top: '50%', left: '50%'}}>
-            <LinearProgress value={30} color={'primary'}/>
+            <LinearProgress value={30} color={"info"}/>
           </Box>
         </ThemeProvider>
       </BrowserRouter>

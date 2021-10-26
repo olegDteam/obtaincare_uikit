@@ -40,7 +40,8 @@ export const colors = {
     lightGray: '#7E8EA2',
     sweetBlue: '#F2F8FE',
     black: '#000000',
-    ivory: '#FFFDEA'
+    ivory: '#FFFDEA',
+    orange: '#FFB84D'
   },
   border: {
     primary: '',
