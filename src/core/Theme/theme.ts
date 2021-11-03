@@ -32,8 +32,10 @@ export const colors = {
     main: '#000000',
     additional: '#7E8EA1',
     grey: '#616870',
+    lightGrey: '#A4B1B9',
     blue: '#749FC8',
-    green: '#00CBBF'
+    green: '#00CBBF',
+    darkblue: '#203541'
   },
   common: {
     white: '#FFFFFF',
@@ -41,7 +43,8 @@ export const colors = {
     sweetBlue: '#F2F8FE',
     black: '#000000',
     ivory: '#FFFDEA',
-    orange: '#FFB84D'
+    orange: '#FFB84D',
+    darkblue: '#203541'
   },
   border: {
     primary: '',
@@ -49,6 +52,16 @@ export const colors = {
     additional: '#F2F8FE',
     danger: '#F83F20',
     pagination: '#F3F8FD'
+  },
+  background: {
+    galleryCover: '#3B5C7B',
+    provider: '#F3F8FD',
+    grey: '#EDEDED',
+    white: '#FFFFFF'
+  },
+  boxShadow: {
+    grey: 'rgba(174, 194, 213, 0.36)',
+    black: 'rgba(0, 0, 0, 0.08)'
   },
   red: '#F83F20',
   lightGray: '#99A2AD',
@@ -495,14 +508,7 @@ declare module '@mui/material/Button/Button' {
   }
 
   interface ButtonPropsColorOverrides {
-    additional: true
     link: true
-    danger: true
-    userSidebar: true
-    providerSidebar: true
-    headerLocation: true
-    providerAdditional: true
-    changeButton: true
   }
 
   interface ButtonPropsSizeOverrides {
