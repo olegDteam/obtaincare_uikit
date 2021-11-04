@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   Autocomplete as AutocompleteBase,
-  AutocompleteProps as AutocompletePropsBase, createFilterOptions,
+  AutocompleteProps as AutocompletePropsBase,
   InputBase,
   Paper as PaperBase,
   styled,
