@@ -35,7 +35,8 @@ export const colors = {
     lightGrey: '#A4B1B9',
     blue: '#749FC8',
     green: '#00CBBF',
-    darkblue: '#203541'
+    darkblue: '#203541',
+    darkGreen: '#607E80'
   },
   common: {
     white: '#FFFFFF',
@@ -57,7 +58,9 @@ export const colors = {
     galleryCover: '#3B5C7B',
     provider: '#F3F8FD',
     grey: '#EDEDED',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
+    green: '#00CBBF',
+    red: '#F83F20'
   },
   boxShadow: {
     grey: 'rgba(174, 194, 213, 0.36)',
@@ -397,8 +400,16 @@ const theme = createTheme({
         {
           props: {size: 'l'},
           style: {
-            padding: '10.5px 16px',
-            height: '38px',
+            padding: '10px 16px',
+            height: '41px',
+            borderRadius: '5px'
+          }
+        },
+        {
+          props: {size: 'xl'},
+          style: {
+            padding: '12.5px 16px',
+            height: '46px',
             borderRadius: '5px'
           }
         },
@@ -515,6 +526,7 @@ declare module '@mui/material/Button/Button' {
     s: true
     m: true
     l: true
+    xl: true
     link: true
   }
 }

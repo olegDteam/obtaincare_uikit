@@ -139,10 +139,11 @@ export type AutocompleteProps = Omit<AutocompletePropsBase<any, any, any, any>, 
   error?: boolean
   onInputPropChange?: React.ChangeEventHandler<HTMLTextAreaElement | HTMLInputElement>
   helperText?: string | null
+  maxRows?: number
 }
 
 const Autocomplete: React.FC<AutocompleteProps> = (props) => {
-  const {color, name, inputPropValue, error, onInputPropChange, helperText, ...otherProps} = props
+  const {color, name, inputPropValue, error, onInputPropChange, helperText, maxRows, ...otherProps} = props
   return <>
     <AutocompleteBase
       {...otherProps}
@@ -159,6 +160,7 @@ const Autocomplete: React.FC<AutocompleteProps> = (props) => {
                       onChange={onInputPropChange}
                       startAdornment={params.InputProps.startAdornment}
                       endAdornment={null}
+                      maxRows={maxRows}
                       {...otherParams}
         />
       }}

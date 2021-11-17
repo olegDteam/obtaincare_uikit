@@ -45,6 +45,10 @@ const TextFieldStyled = styled((props: TextFieldPropsBase) => <TextFieldBase var
       &.Mui-disabled fieldset {
         border: unset;
       }
+      
+      &.Mui-error fieldset {
+        border: 1px solid ${colors.border.danger};
+      }
 
       &:hover fieldset {
         border: 1px solid ${colors.border.additional} !important;

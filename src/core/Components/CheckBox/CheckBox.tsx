@@ -4,7 +4,7 @@ import { colors } from "../../Theme";
 import {CheckboxChecked} from "../Icons/CheckboxChecked";
 import {CheckboxUnchecked} from "../Icons/CheckboxUnchecked";
 
-export type CheckBoxProps=Omit<CheckboxPropsBase,'disableRipple'|'disableTouchRipple'|'disableFocusRipple'|'icon'|'checkedIcon'>& {
+export type CheckBoxProps=Omit<CheckboxPropsBase,'disableRipple'|'disableTouchRipple'|'disableFocusRipple'>& {
   iconColor?: 'primary'|'danger'|'secondary'
   fontSize?: SvgIconProps['fontSize']
 }
@@ -20,11 +20,11 @@ const CheckBox = (props:CheckBoxProps) => {
   if(props.iconColor==='danger') {
     fill=colors.danger.red
   }
-  const {iconColor, fontSize, ...otherProps}= props
+  const {iconColor, fontSize, icon, checkedIcon, ...otherProps}= props
   return (
     <CheckboxBase
-      icon={<CheckboxUnchecked fontSize={fontSize} fill={fill}/>}
-      checkedIcon={<CheckboxChecked fontSize={fontSize} fill={fill}/>}
+      icon={icon??<CheckboxUnchecked fontSize={fontSize} fill={fill}/>}
+      checkedIcon={checkedIcon??<CheckboxChecked fontSize={fontSize} fill={fill}/>}
       disableRipple
       disableTouchRipple
       disableFocusRipple
