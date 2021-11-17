@@ -60,7 +60,8 @@ export const colors = {
     grey: '#EDEDED',
     white: '#FFFFFF',
     green: '#00CBBF',
-    red: '#F83F20'
+    red: '#F83F20',
+    darkblue: '#203541',
   },
   boxShadow: {
     grey: 'rgba(174, 194, 213, 0.36)',
