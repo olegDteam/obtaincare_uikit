@@ -36,7 +36,7 @@ export const colors = {
     blue: '#749FC8',
     green: '#00CBBF',
     darkblue: '#203541',
-    darkGreen: '#607E80'
+    darkGreen: '#607E80',
   },
   common: {
     white: '#FFFFFF',
@@ -148,6 +148,12 @@ const theme = createTheme({
       fontSize: '16px',
       lineHeight: '24px',
       fontWeight: 600,
+      fontStyle: 'normal'
+    },
+    h6: {
+      fontSize: '14px',
+      lineHeight: '21px',
+      fontWeight: 'bold',
       fontStyle: 'normal'
     },
     button: {

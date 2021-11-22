@@ -1,6 +1,6 @@
 {
   "name": "obtaincare_uikit",
-  "version": "0.1.46",
+  "version": "0.1.47",
   "private": false,
   "main": "lib/index.js",
   "files": [
