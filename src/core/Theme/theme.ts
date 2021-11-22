@@ -150,12 +150,6 @@ const theme = createTheme({
       fontWeight: 600,
       fontStyle: 'normal'
     },
-    h6: {
-      fontSize: '14px',
-      lineHeight: '21px',
-      fontWeight: 'bold',
-      fontStyle: 'normal'
-    },
     button: {
       fontSize: '14px',
       lineHeight: '17px',
