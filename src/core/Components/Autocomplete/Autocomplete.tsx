@@ -20,6 +20,8 @@ export const Input = styled(InputBase)(() => `
   line-height: 18px;
   min-height: 46px;
   padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: ${colors.text.additional};
   border-radius: 5px;
 
@@ -43,6 +45,27 @@ export const Input = styled(InputBase)(() => `
       border: none;
       background-color: transparent;
       opacity: 1;
+    }
+    
+    .MuiButtonBase-root {
+      background-color: ${colors.background.white};
+      border: 1px solid ${colors.border.grey};
+      padding-right: 1rem!important;
+      
+      &.Mui-disabled {
+         span {
+           padding-right: 0!important;
+         }
+      }
+  
+      span {
+        padding-right: 20px!important;
+      }
+  
+      svg {
+        right: -7px;
+        left: initial;
+      }
     }
   }
 
@@ -72,7 +95,7 @@ export const Input = styled(InputBase)(() => `
 
     span {
       font-size: 14px;
-      line-height: 17px;
+      line-height: 32px;
       font-weight: 600;
       font-style: normal;
       color: ${colors.text.grey};
@@ -134,6 +157,7 @@ export const Paper = styled(PaperBase)(() => `
 
 export type AutocompleteProps = Omit<AutocompletePropsBase<any, any, any, any>, 'renderInput'> & {
   color?: 'primary' | 'secondary' | 'info'
+  label?: string
   name?: string
   inputPropValue?: unknown
   error?: boolean

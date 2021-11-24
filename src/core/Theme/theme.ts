@@ -11,6 +11,11 @@ export const colors = {
     hover: '#7EB6EB',
     active: '#547FA8',
   },
+  cancel: {
+    main: '#EDEDED',
+    hover: '#E2E2E2',
+    active: '#D2D2D2',
+  },
   additional: {
     main: '#F3F8FD',
     hover: '#749FC8',
@@ -52,7 +57,8 @@ export const colors = {
     secondary: '#749FC8',
     additional: '#F2F8FE',
     danger: '#F83F20',
-    pagination: '#F3F8FD'
+    pagination: '#F3F8FD',
+    grey: '#DCDCDC'
   },
   background: {
     galleryCover: '#3B5C7B',
@@ -109,6 +115,12 @@ export const colors = {
 const theme = createTheme({
   palette: {
     link: {
+      main: '#FFFFFF',
+      light: '#FFFFFF',
+      dark: '#FFFFFF',
+      contrastText: '#FFFFFF'
+    },
+    cancel: {
       main: '#FFFFFF',
       light: '#FFFFFF',
       dark: '#FFFFFF',
@@ -332,6 +344,26 @@ const theme = createTheme({
           }
         },
         {
+          props: {color: "cancel"},
+          style: {
+            color: colors.text.grey,
+            backgroundColor: colors.cancel.main,
+            '&:hover': {
+              color: colors.text.grey,
+              backgroundColor: colors.cancel.hover,
+            },
+            ":disabled": {
+              color: colors.text.grey,
+              backgroundColor: colors.cancel.main,
+              opacity: 0.5,
+            },
+            ':active': {
+              color: colors.text.grey,
+              backgroundColor: colors.cancel.active,
+            },
+          }
+        },
+        {
           props: {color: "info"},
           style: {
             color: colors.text.additional,
@@ -521,6 +553,7 @@ declare module '@mui/material/Button/Button' {
 
   interface ButtonPropsColorOverrides {
     link: true
+    cancel: true
   }
 
   interface ButtonPropsSizeOverrides {
@@ -564,10 +597,12 @@ declare module "@mui/material/Radio/Radio" {
 declare module "@mui/material/styles/createPalette" {
   interface Palette {
     link: Palette['primary'];
+    cancel: Palette['primary'];
   }
 
   interface PaletteOptions {
     link: PaletteOptions['primary'];
+    cancel: PaletteOptions['primary'];
   }
 }
 

@@ -19,14 +19,18 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <ThemeProvider theme={theme}>
-          <Box style={{width: 300, backgroundColor: colors.background.provider}}>
+          <Box style={{width: 300, backgroundColor: colors.background.white}}>
             <TextField
               fullWidth
               color={'secondary'}
               disabled={!active}
               value={'QPIWUYGUE QPIWUYGUE QPIWUYGUE '}
             />
-            <Button color={'success'} disableRipple onClick={()=>setActive(p=>!p)}>ACT</Button>
+
+            <Autocomplete multiple color={'info'} placeholder={'placeholder'} options={['dfsdfsdfsdfsf','fsdfsdfdsfsdff']}/>
+
+            <Button color={'cancel'}>ACfdsgsdfsdT</Button>
+
             <LinearProgress color={'success'} variant={'determinate'} value={51}/>
 
               <FormControl>
