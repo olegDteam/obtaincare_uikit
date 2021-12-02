@@ -39,6 +39,7 @@ export const colors = {
     grey: '#616870',
     lightGrey: '#A4B1B9',
     blue: '#749FC8',
+    darkBlue: '#5A7690',
     green: '#00CBBF',
     darkblue: '#203541',
     darkGreen: '#607E80',
@@ -68,6 +69,8 @@ export const colors = {
     green: '#00CBBF',
     red: '#F83F20',
     darkblue: '#203541',
+    darkGrey: '#616870',
+    blue: '#749FC8',
   },
   boxShadow: {
     grey: 'rgba(174, 194, 213, 0.36)',
