@@ -59,7 +59,8 @@ export const colors = {
     additional: '#F2F8FE',
     danger: '#F83F20',
     pagination: '#F3F8FD',
-    grey: '#DCDCDC'
+    grey: '#DCDCDC',
+    blue: '#426477'
   },
   background: {
     galleryCover: '#3B5C7B',
