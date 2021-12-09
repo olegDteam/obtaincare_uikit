@@ -47,7 +47,7 @@ export const Input = styled(InputBase)(() => `
       opacity: 1;
       
       &:hover {
-        border: 1px solid ${colors.border.additional}
+        border: 1px solid ${colors.border.secondary}
       }
     }
     
