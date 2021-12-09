@@ -2,14 +2,14 @@ import {createTheme} from '@mui/material/styles'
 
 export const colors = {
   primary: {
-    main: '#00CBBF',
-    hover: '#89EFD1',
-    active: '#5DBDB0',
-  },
-  secondary: {
     main: '#749FC8',
     hover: '#7EB6EB',
     active: '#547FA8',
+  },
+  secondary: {
+    main: '#DDEFFF',
+    hover: '#F3F8FD',
+    active: '#749FC8',
   },
   cancel: {
     main: '#EDEDED',
@@ -330,14 +330,14 @@ const theme = createTheme({
         {
           props: {color: "secondary"},
           style: {
-            color: colors.text.default,
+            color: colors.text.blue,
             backgroundColor: colors.secondary.main,
             '&:hover': {
-              color: colors.text.default,
+              color: colors.text.blue,
               backgroundColor: colors.secondary.hover,
             },
             ":disabled": {
-              color: colors.text.default,
+              color: colors.text.blue,
               backgroundColor: colors.secondary.main,
               opacity: 0.5,
             },
