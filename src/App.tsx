@@ -22,12 +22,12 @@ function App() {
           <Box style={{width: 300, backgroundColor: colors.background.white}}>
             <TextField
               fullWidth
-              color={'secondary'}
+              color={'info'}
               disabled={!active}
               value={'QPIWUYGUE QPIWUYGUE QPIWUYGUE '}
             />
 
-            <Autocomplete multiple color={'info'} placeholder={'placeholder'} options={['dfsdfsdfsdfsf','fsdfsdfdsfsdff']}/>
+            <Autocomplete disabled multiple color={'info'} placeholder={'placeholder'} options={['dfsdfsdfsdfsf','fsdfsdfdsfsdff']}/>
 
             <Button color={'cancel'}>ACfdsgsdfsdT</Button>
 

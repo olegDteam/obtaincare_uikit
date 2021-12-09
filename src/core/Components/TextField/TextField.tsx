@@ -39,7 +39,7 @@ const TextFieldStyled = styled((props: TextFieldPropsBase) => <TextFieldBase var
       }
 
       fieldset {
-        border: 1px solid ${colors.border.additional};
+        border: 1px solid ${colors.border.secondary};
       }
 
       &.Mui-disabled fieldset {
@@ -51,7 +51,7 @@ const TextFieldStyled = styled((props: TextFieldPropsBase) => <TextFieldBase var
       }
 
       &:hover fieldset {
-        border: 1px solid ${colors.border.additional} !important;
+        border: 1px solid ${colors.border.secondary} !important;
       }
     }
 

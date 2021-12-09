@@ -39,12 +39,16 @@ export const Input = styled(InputBase)(() => `
   }
 
   &.MuiInputBase-colorInfo {
-    border: 1px solid ${colors.border.additional};
+    border: 1px solid ${colors.border.secondary};
 
     &.Mui-disabled {
       border: none;
       background-color: transparent;
       opacity: 1;
+      
+      &:hover {
+        border: 1px solid ${colors.border.additional}
+      }
     }
     
     .MuiButtonBase-root {
